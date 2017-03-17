@@ -17,17 +17,11 @@
   --pre-code-color: #4c4c4c;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   font: var(--base-font-weight) var(--base-font-size) var(--base-font-family), sans-serif;
   color: var(--base-color);
-  min-height: 100%;
-  display: flex;
   margin: 0;
-  flex-direction: column;
+  padding: 2.0em 2.0em 0;
   background-image: url(../media/ginta-gray.png);
   background-repeat: repeat-y;
   background-position: left 0;
@@ -160,71 +154,6 @@ tt {
   font-family: var(--code-font-family), monospace;
   word-wrap: break-word;
 }
-pre {
-  margin: 1.64em 0;
-  padding: 7px;
-  border: none;
-  border-left: 3px solid #dadada;
-  padding-left: 10px;
-  overflow: auto;
-  line-height: 1.5;
-  font-size: 0.96em;
-  font-family: var(--code-font-family), monospace;
-  color: var(--pre-code-color);
-  background-color: #f9f9f7;
-}
-pre code,
-pre tt {
-  color: var(--pre-code-color);
-  border: none;
-  background: none;
-  padding: 0;
-}
-table {
-  width: 100%;
-  max-width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin-bottom: 1.5em;
-  font-size: 0.96em;
-  box-sizing: border-box;
-}
-th,
-td {
-  text-align: left;
-  padding: 4px 8px 4px 10px;
-  border: 1px solid #dadada;
-}
-td {
-  vertical-align: top;
-}
-tr:nth-child(even) {
-  background-color: #efefee;
-}
-iframe {
-  display: block;
-  max-width: 100%;
-  margin-bottom: 30px;
-}
-figure iframe {
-  margin: auto;
-}
-table pre {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: none;
-}
-@media (min-width: 1100px) {
-  blockquote {
-    margin-left: -24px;
-    padding-left: 20px;
-    border-width: 4px;
-  }
-  blockquote blockquote {
-    margin-left: 0;
-  }
-}
 
 .icon {
   display: inline-block;
@@ -248,8 +177,7 @@ Single-colored icons can be modified like so:
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2.0em;
-  margin-bottom: 2.5em;
+  margin-bottom: 4.5em;
 }
 
 .logo {
@@ -272,11 +200,6 @@ Single-colored icons can be modified like so:
 .contact .icon {
   color: var(--minor-color);
   vertical-align: middle;
-}
-
-.section-container {
-  flex: 1;
-  padding: 0 2.0em;
 }
 
 .timeline > li {
@@ -396,29 +319,16 @@ Single-colored icons can be modified like so:
 }
 
 footer {
-  display: flex;
-  padding: 2.0em 0 0;
-  align-items: flex-end;
+  padding: 4.0em 0 0; 
 }
-
-footer blockquote {
-  flex: 1;
-  margin: 0 4em 0 2em;
-  padding: 12px 0 0;
-  border-top: 3px solid #E2E4E6;
-  color: var(--blockquote-color);
+footer p {
+  text-align: center;
+  border-top: 1px solid #eee;
+  color: #eee;
 }
-footer dl {
-  margin: 0;
-  width: 24.32em;
-  height: 18.84em;
-  font-size: 0.8em;
-  padding: 11em 0 0 10em;
-  box-sizing: border-box;
-  background: url(../media/ginta-bg.png) no-repeat 100% 0;
-  background-size: 100%;
-}
-footer dl a {
-  color: var(--minor-color);
-  text-decoration: none;
+footer p span {
+  position: relative;
+  top: -0.8em;
+  background: #fff;
+  padding: 0 0.2em;
 }
